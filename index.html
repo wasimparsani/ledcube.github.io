@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,700&family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <title>Wasim Parsani - Led Cube</title>
+    <link href="img.css">
+    <style>
+      body, html {
+         height: 100%;
+        }
+        #content {
+        text-align: center;
+        display: grid;
+        place-content: center;
+        font-family: 'Ubuntu', sans-serif;
+        color: #e91e63;
+        background-color: rgba(255, 255, 255, 0.938); 
+        text-shadow: 0px 1px 1px #8d8d8b;
+       
+        }
+        
+        #firstpage {
+          background-image: url('x1.jpg');
+          height: 100%; 
+           background-attachment: fixed;
+          background-position: center;
+          background-repeat:no-repeat;
+           background-size: cover;
+          opacity: 95%;
+        text-align: center;
+        display: grid;
+        place-content: center;
+        font-family: 'Ubuntu', sans-serif;
+        color: black;
+        text-shadow: 0px 1px 1px rgb(193, 255, 23);
+        height: 100vh;
+            
+        }
+        
+        h1{
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            color: #1c89f9;
+          }
+           
+        #sep{
+            font-family: monospace;
+            text-align: right;
+            padding-right: 5%;
+            color: #10205a;
+        }
+        #vid{
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        #list{
+          
+            text-align: left;
+            display: grid;  
+            place-content: center;
+            font-family: 'Ubuntu', sans-serif;
+            background-color: rgba(252, 252, 252, 0.815);
+            color: #e91e63;
+        }
+        .par1{
+          background-image: url('c4.jpg');
+          height:50vh; 
+           background-attachment: fixed;
+             background-position: center;
+              background-repeat:no-repeat;
+             background-size: cover;
+        }
+        .par2{
+          background-image: url('v6.jpg');
+          height:60vh; 
+           background-attachment: fixed;
+             background-position: center;
+              background-repeat:no-repeat;
+             background-size: cover;
+        }
+        .par3{
+          background-image: url('s2.jpg');
+          height:60vh; 
+           background-attachment: fixed;
+             background-position: center;
+              background-repeat:no-repeat;
+             background-size: cover;
+        }
+        .par4{
+          background-image: url('v7.jpg');
+          height:60vh; 
+           background-attachment: fixed;
+             background-position: center;
+              background-repeat:no-repeat;
+             background-size: cover;
+             opacity: 85%;
+        }
+        .par5{
+          background-image: url('d2.jpg');
+          height:60vh; 
+           background-attachment: fixed;
+             background-position: center;
+              background-repeat:no-repeat;
+             background-size: cover;
+             opacity: 85%;
+        }
+        .par6{
+          background-image: url('v2.jpg');
+          height:60vh; 
+           background-attachment: fixed;
+             background-position: center;
+              background-repeat:no-repeat;
+             background-size: cover;
+             opacity: 85%;
+        }
+        .par7{
+          background-image: url('v4.jpg');
+          height:60vh; 
+           background-attachment: fixed;
+             background-position: center;
+              background-repeat:no-repeat;
+             background-size: cover;
+             opacity: 85%;
+        }
+        .end{
+          background-image: url('c3.jpg');
+          height:100vh; 
+           background-attachment: fixed;
+             background-position: center;
+              background-repeat:no-repeat;
+             background-size: cover;
+             text-align: center;
+        display:grid;
+        place-content: center;
+        font-family: 'Ubuntu', sans-serif;
+        color: white;
+        text-shadow: 0px 1px 1px rgb(193, 255, 23);
+        }
+        p,ol,ul{
+            font-size:150%;
+            padding-left: 7%;
+            padding-right: 5%;
+        }
+        .row1 {
+            display: flex;
+        }
+
+/* Create three equal columns that sits next to each other */
+        .column1 {
+            flex: 33.33%;
+            padding: 6px;
+            
+        }
+        .column {
+        float: left;
+        flex: 25%;
+        padding: 6px;
+  }
+  .row{
+      display: flex;
+  }
+  /* Style the images inside the grid */
+  .column img {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  
+  .column img:hover {
+    opacity: 1;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    display: table;
+    clear: both;
+  }
+  
+  /* The expanding image container (positioning is needed to position the close button and the text) */
+  .container {
+    position: relative;
+    display: none;
+  }
+  
+  /* Expanding image text */
+  #imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+  }
+  
+  /* Closable button inside the image */
+  .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+  }
+    </style>
+</head>
+<body>
+  
+        <div id="firstpage">
+          <p style="font-size: 65px; color: #f4e20b;font-family: 'Monoton', cursive;">LED CUBE</p><br><br>
+            <p>  LED cube is a 3 dimensional cube made out of Light Emitting Diodes (LEDs). A LED cube is like a LED screen , but it is special as it has 3D.</p><br><br>
+            <p id="sep">Hi! I am Wasim Parsani</p>
+        </div>
+        <div id="content">
+            <h1>Video :</h1><br><br>
+            <video id="vid" controls width=800px height=500px autoplay loop unmuted preload="auto">
+                <source src="led.mp4" type="video/mp4" >
+            </video>
+        <br>
+        <br><div class="par1"></div><br>
+        <div id="list">
+          <br>
+            <h1>Skills Required:</h1>
+            <hr style="width:70%;text-align:center;">
+            <br>
+            <ol>
+                <li>Basic electronics. (I would recommend against building this as your very first electronics project.)</li>
+                <li>How to solder.</li>
+                <li>How to use a multimeter etc.</li>
+                <li>Writing code in C (optional. We provide a fully functional program, ready to go)</li>
+            </ol>
+            <br><br>
+                <p>You should also have patience and a generous amount of free time.</p><br>
+                <p>At first glance this project might seem like an overly complex and daunting task. However, we are dealing with digital electronics here, so everything is either on or off!</p>
+                
+              </div>
+              <br>
+              <div class="par2"></div><br>
+            
+                <h1>Component List:</h1><hr style="width:70%;text-align:center;"><br>
+                <div class="slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 8</div>
+                      <img src="i1.jpg" style="width:70%">
+                      <div class="text">ICs</div>
+                    </div>
+                  
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 8</div>
+                      <img src="i2.jpg" style="width:70%">
+                      <div class="text">Push Buttons</div>
+                    </div>
+                  
+                    <div class="mySlides fade">
+                      <div class="numbertext">3 / 8</div>
+                      <img src="i3.jpg" style="width:70%">
+                      <div class="text">resistors</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">4 / 8</div>
+                      <img src="i4.png" style="width:70%">
+                      <div class="text">Capacitors</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">5 / 8</div>
+                        <img src="i5.jpg" style="width:70%">
+                        <div class="text">LEDs</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">6 / 8</div>
+                        <img src="i6.jpg" style="width:70%">
+                        <div class="text">PCBs</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">7 / 8</div>
+                        <img src="i7.png" style="width:70%">
+                        <div class="text">Soldering Iron</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">8 / 8</div>
+                        <img src="i8.png" style="width:70%">
+                        <div class="text">Helping Hand</div>
+                      </div>
+                  
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  </div>
+                  <br>
+            
+                  
+                  <!-- The dots/circles -->
+                  <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                    <span class="dot" onclick="currentSlide(7)"></span>
+                    <span class="dot" onclick="currentSlide(8)"></span>
+                  </div>
+        
+
+        <div id="list">
+            <p>Here is what you need to make a LED cube:</p>
+            <br>
+            <ul>
+                <li>512x  LEDs (plus some extra for making mistakes!).</li>
+                <li>8x 74HC574 ICs.</li>
+                <li>64x resistors.</li>
+                <li>2x large prototype PCBs.</li>
+                <li>3x status LEDs.</li>
+                <li>16x 1k resistors.</li>
+                <li>1x 74HC138 IC.</li>
+                <li>2x 22pF ceramic capacitors.</li>
+                <li>16x 0.1uF ceramic capacitors.</li>
+                <li>3x 1000uF electrolytic capacitor.</li>
+                <li>1x 100uF electrolytic capacitors.</li>
+                <li>2x 16 pin IC socket.</li>
+                <li>1x 40 pin IC socket.</li>
+                <li>2x 16-pin ribbon cable connector.</li>
+                <li>9x 8-pin female header plugs.</li>
+                <li>Piece of wood for template and base.</li>
+                <li>5v power supply (see separate step for power supply).</li>
+            </ul>
+        </div>
+        
+        <br><div class="par3"></div><br>
+            <h1>Working: </h1><hr style="width:70%;text-align:center;"><br>
+            <div class="row1">
+                <div class="column1">
+                  <img src="IMG1.jpg" alt="Snow" style="width:100%;border-radius: 0.3cm;">
+                </div>
+                <div class="column1">
+                  <img src="3.jpeg" alt="Forest" style="width:100%; border-radius: 0.3cm;">
+                </div>
+                <div class="column1">
+                    <img src="10.jpg" alt="Forest" style="width:100% ;border-radius: 0.3cm;">
+                  </div>
+            </div>
+            <p>The LED cube has 512 LEDs. So it is impractical to
+                dedicate a IO port for each LED.Instead LED cube rely
+                on optical phenomenon called Persistence of vision.If you
+                flash a LED really fast it will remain in your retina for
+                some time even after LED is switched off.By flashing each
+                layer of cube very fast after one another it gives the
+                feeling of 3d.<br>
+                With this setup we will need only 64(anode) + 8(layers)
+                IO ports to control each led.</p>
+                <br><div class="par4"></div><br>
+           <h1>Connections: </h1><hr style="width:70%;text-align:center;"><br>
+
+        <div class="row">
+            <div class="column">
+              <img src="z1.png"  onclick="myFunction(this);"style="width:100%">
+            </div>
+            <div class="column">
+              <img src="z2.png"  onclick="myFunction(this);"style="width:100%">
+            </div>
+            <div class="column">
+              <img src="z3.png"  onclick="myFunction(this);"style="width:100%">
+            </div>
+            <div class="column">
+              <img src="z4.jpeg"  onclick="myFunction(this);"style="width:100%">
+            </div>
+          </div>
+          
+          <!-- The expanding image container -->
+          <div class="container">
+            <!-- Close the image -->
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            
+            <!-- Expanded image -->
+            <img id="expandedImg" style="width:60%">
+          
+            <!-- Image text -->
+            <div id="imgtext"></div>
+          </div>
+          <br><div class="par5"></div><br>
+          <h1>Build the Cube: Solder a Layer</h1><hr style="width:70%;text-align:center;"><br>
+            <div class="row1">
+                <div class="column1">
+                    <img src="f.jpeg" alt="Snow" style="width:60%;border-radius: 0.3cm;">
+                </div>
+            </div>
+            <div id="list">
+            <p>
+                Each layer is made up of 8 columns of LEDs held together by the legs of each LED. At the top of each layer each LED is rotated 90 degrees clockwise, so that the leg connects with the top LED of the next column. On the column to the right this leg will stick out of the side of the layer. We leave this in place and use it to connect ground when testing all the LEDs in a later step.<br><br>
+
+                <p style="color: #1c89f9;font-weight: bolder; ">1) Prepare 64 LEDs</p><p>
+Bend the cathode leg of each LED 90 degrees. Make sure the legs are bent in the same direction on all the LEDs. Looking at the LED sitting in a hole in the template with the notch to the right, we bent the leg upwards.</p>
+
+<p style="color: #1c89f9; font-weight: bolder; ">2) Start with the row at the top</p><p>
+Start by placing the top right LED in the template. Then place the one to the left, positioning it so that it's cathode leg is touching the cathode leg of the previous LED. Rinse and repeat until you reach the left LED. Solder all the joints.</p>
+
+<p style="color: #1c89f9;font-weight: bolder; ">3) Solder all 8 columns</p><p>
+If you are right handed, we recommend you start with the column to the left. That way your hand can rest on the wooden template when you solder. You will need a steady hand when soldering freehand like this. Start by placing the LED second from the top, aligning it so it's leg touches the solder joint from the previous step. Then place the LED below that so that the cathode leg touches the LED above. Repeat until you reach the bottom. Solder all the joints.</p>
+
+<p style="color: #1c89f9;font-weight: bolder; ">4) Add braces</p><p>
+You now have a layer that looks like a comb. At this point the whole thing is very flimsy, and you will need to add some support. We used one bracing near the bottom and one near the middle. Take a straight peace of wire, roughly align it where you want it and solder one end to the layer. Fine tune the alignment and solder the other end in place. Now, make solder joints to the remaining 6 columns. Do this for both braces.
+<p style="color: #1c89f9;font-weight: bolder; ">5) Test all the LEDs</p><p>
+This is covered in the next step. Just mentioning here so you don't remove the layer just yet.
+<p style="color: #1c89f9;font-weight: bolder; ">6) Remove the layer</p><p>
+The first layer of your LED cube is all done, now all you have to do is remove it from the template. Depending on the size of your holes, some LEDs might have more resistance when you try to pull it out. Simply grabbing both ends of the layer and pulling would probably break the whole thing if a couple of the LEDs are stuck.
+
+<br>Start by lifting every single LED a couple of millimeters. Just enough to feel that there isn't any resistance. When all the LEDs are freed from their holes, try lifting it carefully. If it is still stuck, stop and pull the stuck LEDs out.<br>
+
+<br>Repeat 8 times!<br>
+
+<br>Note on images:<br>
+If you are having trouble seeing the detail in any of our pictures, you can views the full resolution by clicking on the little i icon in the top left corner of every image. All our close up pictures are taken with a mini tripod and should have excellent macro focus. On the image page, choose the original size from the "Available sizes" menu on the left hand side.
+            </p>
+        </div>
+        <br><div class="par6"></div><br>
+           <h1>Build the Cube: Attach Cables: </h1><hr style="width:70%;text-align:center;"><br>
+           <div class="row1">
+            <div class="column1">
+              <img src="1.jpeg" alt="Snow" style="width:100%;border-radius: 0.3cm;">
+            </div>
+            <div class="column1">
+              <img src="2.jpeg" alt="Forest" style="width:100%; border-radius: 0.3cm;">
+            </div>
+            <div class="column1">
+                <img src="5.jpeg" alt="Forest" style="width:100% ;border-radius: 0.3cm;">
+              </div>
+        </div> 
+        <br><div class="par7"></div><br>
+            <h1>Code: </h1><hr style="width:70%;text-align:center;"><br>
+            <div class="row1">
+                <div class="column1">
+                  <img src="x2.jpg" alt="Snow" style="width:100%;border-radius: 0.3cm;">
+                </div>
+                <div class="column1">
+                  <img src="x1.png" alt="Forest" style="width:100%; border-radius: 0.3cm;">
+                </div>
+                <div class="column1">
+                    <img src="x3.jpeg" alt="Forest" style="width:100% ;border-radius: 0.3cm;">
+                  </div>
+            </div>      
+       
+        <p style="color: rgb(24, 104, 4); font-weight: bolder;">Download the code: &nbsp; <br><br><a href="led_cube_code.ino"><img border="0" src="icon.png" width="100" height="100"></a><br></p><p>The IO requirements for an 8x8x8 LED cube is:<br>
+        
+
+            Layer select: 8<br>
+            Data bus for latches: 8<br>
+            Address bus for latches: 3<br>
+            Output enable (OE) for latches: 1<br>
+            Total: 21<br>
+            
+            
+            The Arduino has 13 GPIO pins and 8 analog inputs, which can also be used as GPIO. This gives you a total of 21 IO lines, exactly the amount of IO needed to run the LED cube!</p>
+       </div>
+       <div class="end">
+         <h1 style="color: white">CONECT&nbsp;&nbsp;WITH&nbsp;&nbsp;ME</h1>
+         <p style="display: flex;"><a href="https://www.instagram.com/wasim_parsani/"><img src="https://img.icons8.com/fluent/96/000000/instagram-new.png"/></a>
+         
+         <a href="http://linkedin.com/in/wasim-parsani-78385b185"><img src="https://img.icons8.com/fluent/96/000000/linkedin.png"/></a>
+        
+         <a href="https://github.com/wasimparsani"><img src="https://img.icons8.com/fluent/96/000000/github.png"/></a>
+
+         <a href="https://twitter.com/WParsani"><img src="https://img.icons8.com/fluent/96/000000/twitter.png"/>
+        <a href="https://www.facebook.com/wasim.parsani/"><img src="https://img.icons8.com/fluent/96/000000/facebook-new.png"/></a></p>
+
+       </div>
+    <script src="img1.js"></script>
+    <script src="img.js"></script>
+    <script>
+      window.watsonAssistantChatOptions = {
+          integrationID: "41b8caac-bcba-4fbc-8476-d561de10b5cf", // The ID of this integration.
+          region: "eu-gb", // The region your integration is hosted in.
+          serviceInstanceID: "8929169d-7e89-4f5d-9dd2-61709d1c2a19", // The ID of your service instance.
+          onLoad: function(instance) { instance.render(); }
+        };
+      setTimeout(function(){
+        const t=document.createElement('script');
+        t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+        document.head.appendChild(t);
+      });
+    </script>
+</body>
+</html>
